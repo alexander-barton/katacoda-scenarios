@@ -1,5 +1,4 @@
 #!/bin/bash
 
-echo "Workin' hard, or hardly WURking?"
-sleep 4
-echo "Please"
+echo "Please wait a moment for the environment to setup..."
+sleep 5
