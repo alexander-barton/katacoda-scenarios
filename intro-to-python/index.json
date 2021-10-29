@@ -56,7 +56,9 @@
     }
   },
   "environment": {
-    "uilayout": "vscode"
+    "uilayout": "vscode",
+    "uieditorpath": "/home",
+    "home": "/home"
   },
   "backend": {
     "imageid": "ubuntu:2004"
