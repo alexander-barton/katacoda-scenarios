@@ -19,8 +19,10 @@
       "text": "finish.md"
     },
     "assets": {
-      "file": "Intro_to_Python.ipynb",
-      "target": "/root/notebooks/"
+      "host01": [
+        {"file": "Intro_to_Python.ipynb",
+        "target": "/root/notebooks/"}
+      ]
     }
   },
   "environment": {
