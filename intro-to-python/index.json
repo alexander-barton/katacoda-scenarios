@@ -17,6 +17,10 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "file": "Intro_to_Python.ipynb",
+      "target": "/root/notebooks/"
     }
   },
   "environment": {
