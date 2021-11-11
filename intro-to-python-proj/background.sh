@@ -1,10 +1,12 @@
 #!/bin/bash
 
-sleep 5
-echo "done" | tee /root/apt-update
+apt-get -y update
+echo "done" >> /root/apt-update
 
-echo "Installing packages..."
+apt-get -y install python3-venv python3-pip python3-setuptools
+apt-get -y install python3.8-dev python3.8-venv python3.8-distutils
+echo "done" >> /root/apt-install
 
-/usr/local/bin/deploy.sh
-
-echo "done" | tee /root/ready
+unlink /usr/bin/python
+ln -s /usr/bin/python3.8 /usr/bin/python
+echo "done" >> /root/linking
