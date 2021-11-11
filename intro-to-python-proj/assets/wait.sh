@@ -22,29 +22,12 @@ show_progress()
         fi
     done
 
-    # Loop for installing dependencies
-    printf "    \b\b\b\b"
-    echo ""
-    echo -n "Installing packages"
-    while true; do 
-        sudo grep -i "done" /root/apt-install &> /dev/null
-        if [[ "$?" -ne 0 ]]; then
-            temp="${spinstr#?}"
-            printf " [%c]  " "${spinstr}"
-            spinstr=${temp}${spinstr%"${temp}"}
-            sleep "${delay}"
-            printf "\b\b\b\b\b\b"
-        else
-            break
-        fi
-    done
-
     # Loop for linking python
     printf "    \b\b\b\b"
     echo ""
     echo -n "Final clean-up"
     while true; do
-        sudo grep -i "done" /root/linking &> /dev/null
+        sudo grep -i "done" /root/ready &> /dev/null
         if [[ "$?" -ne 0 ]]; then
             temp="${spinstr#?}"
             printf " [%c]  " "${spinstr}"
