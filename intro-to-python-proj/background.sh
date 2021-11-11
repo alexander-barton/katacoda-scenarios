@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export HOME=/root
+
 apt-get -y update
 echo "done" >> /root/apt-update
 
