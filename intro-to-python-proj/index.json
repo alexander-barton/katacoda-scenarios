@@ -69,6 +69,6 @@
     "uieditorpath": "/root/python-project"
   },
   "backend": {
-    "imageid": "ubuntu:1804"
+    "imageid": "python:3.8"
   }
 }
