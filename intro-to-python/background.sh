@@ -6,3 +6,5 @@ export PASSWORD=learning!
 
 # Start jupyter notebook
 jupyter notebook --allow-root
+
+touch /tmp/ready.txt

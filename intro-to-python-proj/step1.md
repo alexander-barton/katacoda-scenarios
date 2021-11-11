@@ -1,6 +1,6 @@
 ## Working in virtual environments
 
-The *most* important part whenever beginning a new python project is to create a new virtual environment.
+The *most* important part on beginning a new python project is to create a new virtual environment.
 
 The idea of a virtual environment is to keep dependecies isolated from one another, so as to avoid conflicts.
 Software systems are continually being updated and infrequently break legacy code with these updates.

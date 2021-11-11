@@ -1,3 +1,5 @@
 #!/bin/bash
 
-apt-get install libffi_dev
+apt-get -y update
+apt-get -y install python3.8-dev python3.8-venv
+
