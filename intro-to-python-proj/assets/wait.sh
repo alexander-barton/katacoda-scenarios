@@ -10,7 +10,7 @@ show_progress()
 
     # Loop for apt-update
     while true; do
-        sudo grep -i "done" /root/apt-update &> /dev/null
+        sudo grep -i "done" ~/apt-update &> /dev/null
         if [[ "$?" -ne 0 ]]; then
             temp="${spinstr#?}"
             printf " [%c]  " "${spinstr}"
@@ -27,7 +27,7 @@ show_progress()
     echo ""
     echo -n "Installing packages"
     while true; do 
-        sudo grep -i "done" /root/apt-install &> /dev/null
+        sudo grep -i "done" ~/apt-install &> /dev/null
         if [[ "$?" -ne 0 ]]; then
             temp="${spinstr#?}"
             printf " [%c]  " "${spinstr}"
@@ -44,7 +44,7 @@ show_progress()
     echo ""
     echo -n "Final clean-up"
     while true; do
-        sudo grep -i "done" /root/linking &> /dev/null
+        sudo grep -i "done" ~/linking &> /dev/null
         if [[ "$?" -ne 0 ]]; then
             temp="${spinstr#?}"
             printf " [%c]  " "${spinstr}"
