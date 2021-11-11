@@ -55,15 +55,16 @@
       "text": "finish.md"
     },
     "assets": {
-      "host01": [
-        {"file": "fin_gif.py", "target": "/root/fin_gif/", "chmod": "+x"},
-        {"file": "fin_gif_complete.py", "target": "/root/fin_gif/", "chmod": "+x"},
+      "client": [
+        {"file": "fin_gif.py", "target": "/root/python-project/fin_gif/", "chmod": "+x"},
+        {"file": "fin_gif_complete.py", "target": "/root/python-project/fin_gif/", "chmod": "+x"},
         {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
   },
   "environment": {
-    "uilayout": "vscode"
+    "uilayout": "vscode",
+    "uieditorpath": "/root/python-project"
   },
   "backend": {
     "imageid": "ubuntu:1804"

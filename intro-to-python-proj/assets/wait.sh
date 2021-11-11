@@ -4,13 +4,13 @@ show_progress()
 {
     echo -n "Updating apt"
     local -r pid="${1}"
-    local -r delay='0.75'
+    local -r delay='0.5'
     local spinstr='\|/-'
     local temp
 
     # Loop for apt-update
     while true; do
-        sudo grep -i "done" /home/scrapbook/tutorial/apt-update &> /dev/null
+        sudo grep -i "done" /root/apt-update &> /dev/null
         if [[ "$?" -ne 0 ]]; then
             temp="${spinstr#?}"
             printf " [%c]  " "${spinstr}"
@@ -27,7 +27,7 @@ show_progress()
     echo ""
     echo -n "Installing packages"
     while true; do 
-        sudo grep -i "done" /home/scrapbook/tutorial/apt-install &> /dev/null
+        sudo grep -i "done" /root/apt-install &> /dev/null
         if [[ "$?" -ne 0 ]]; then
             temp="${spinstr#?}"
             printf " [%c]  " "${spinstr}"
@@ -44,7 +44,7 @@ show_progress()
     echo ""
     echo -n "Final clean-up"
     while true; do
-        sudo grep -i "done" /home/scrapbook/tutorial/linking &> /dev/null
+        sudo grep -i "done" /root/linking &> /dev/null
         if [[ "$?" -ne 0 ]]; then
             temp="${spinstr#?}"
             printf " [%c]  " "${spinstr}"
