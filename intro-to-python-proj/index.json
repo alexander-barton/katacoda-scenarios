@@ -60,8 +60,7 @@
         {"file": "fin_gif_complete.py", "target": "/root/python-project/fin_gif/", "chmod": "+x"}
       ],
       "host01": [
-        {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-        {"file": "deploy.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+        {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
   },
