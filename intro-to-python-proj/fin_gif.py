@@ -1,10 +1,8 @@
 import os
-import datetime
 import argparse
 
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy
 from sklearn.linear_model import SGDRegressor
 from sklearn.preprocessing import MinMaxScaler
 import yfinance as yf

@@ -1,8 +1,8 @@
-## Python virtual environments
+## Launching jupyter notebooks
 
-Virtual environments (venvs) are essential to any python project.
+After the jupyter kernel has launched switch to the jupyter notebook tab.
 
-There are several different venv management systems one can use (provide examples)
+There you will be prompted to input a password.  It is `learning!`.
 
-For this tutorial we will be using pyenv, though you may also use anaconda or venv.
+This should launch a seperate tab from which you will open the `Intro_to_Python.ipynb` notebook.
 
