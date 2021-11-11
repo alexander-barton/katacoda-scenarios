@@ -7,4 +7,5 @@ export PASSWORD=learning!
 # Start jupyter notebook
 jupyter notebook --allow-root
 
+# Make file for foreground script
 touch /tmp/ready.txt

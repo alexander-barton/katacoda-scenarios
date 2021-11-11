@@ -56,10 +56,9 @@
     },
     "assets": {
       "host01": [
-        {"file": "fin_gif.py",
-        "target": "/root/fin_gif/"},
-        {"file": "fin_gif_complete.py",
-        "target": "/root/fin_gif/"}
+        {"file": "fin_gif.py", "target": "/root/fin_gif/"},
+        {"file": "fin_gif_complete.py", "target": "/root/fin_gif/"},
+        {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
   },
