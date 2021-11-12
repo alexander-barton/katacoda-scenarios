@@ -1,6 +1,5 @@
-## Importing Packages
+## Pre-existing code
 
-Now that we have activated and installed our packages we can begin writing our code.
+First we will open the file `fin_gif.py` in the VSCode editor.
 
-First we import all the packages we will use.  Add the import statements to the top of your file.
-Seperate built-ins from PyPI packages?
+Blah blah blah other people's code.

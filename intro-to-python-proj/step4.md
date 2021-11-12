@@ -2,6 +2,18 @@
 
 Now we need to write a function to prep the data. 
 
-We want the log returns, &c.
+Assuming we get the data provided for the previous function as our input what should we do?
 
-$$log{frac{P_t}{P_{t-1}}}$$
+First we will need to get the log returns of a function.
+
+Hint: `np.log(), np.ravel(1)`
+
+Then we will also need the 10 day momentum
+
+Hint: `data - np.ravel(10)`
+
+Then we will need to scale the momentum data
+
+Hint: `MinMaxScaler()`
+
+And finally, make sure the data are of the appropriate length.
