@@ -12,8 +12,6 @@ For this tutorial, we will be using the built-in venv module of python.
 First, let's create a series of new directories.  Then make a venv folder.  Finally, we will make
 a new venv using the command `python -m venv venvs/intro-3.8`.
 
-*Note*: it is good practice to include the python version in the enviornment name.
-
 -----
 
 Now that this is done we must activate the environment by sourcing a shell file.
@@ -22,4 +20,4 @@ Now that this is done we must activate the environment by sourcing a shell file.
 
 This puts us into the virtual environment and allows us to install packages.  Let's do that now.
 
-Using `pip`, install NumPy, SciPy, matplotlib, &c.
+Using `pip`, install yfinance, imageio, matplotlib, texttable, and scikit-learn.

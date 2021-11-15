@@ -3,7 +3,6 @@ import argparse
 
 import numpy as np
 import matplotlib.pyplot as plt
-from numpy.matrixlib import defmatrix
 import scipy as sp
 import yfinance as yf
 import imageio
@@ -14,8 +13,18 @@ from texttable import Texttable
 
 # Extends the class SGDRegressor() to add stats
 class SGDRegressor2(SGDRegressor):
+    """
+    Extension of the SGDRegressor class from scikit-learn.
 
-    def stats(self,X,y):
+    Only adds a method stats(...) that takes predictor data X (without intercept)
+    and target data y.
+
+    Calculates an omnibus F-stat, pval and rquared.
+    Additionally, calculates standard errors, t-stats, and pvals for all the 
+    coefficients in the model (sans intercept).
+    """
+
+    def stats(self, X, y):
 
         n, m = X.shape
         dfe = n - m - 1
@@ -126,6 +135,7 @@ def print_table(mean, var, min, max):
 
 def print_reg(reg):
     """
+    Prints statistical information on a given SGDRegressor2 object.  Returns None.
     """
 
     t = Texttable()
@@ -144,7 +154,7 @@ def print_reg(reg):
     print(t.draw())
 
 
-def sgd_regression(X,y,n_iter=1000,n_save=50):
+def sgd_regression(X, y, n_iter=1000, n_save=50):
     """
     Performs a regression using scikit-learn's SGDRegressor.
     Fits for n_iter iterations and saves the coefficients and intercept every n_save iterations.
@@ -263,7 +273,6 @@ def main(ticker, gif_title, show_table=True):
 
     make_gif(momentum, log_tick, interps, coefs, 50, save_name=gif_title, xlabel='10 day Momentum', ylabel='$log(returns)$')
 
-    # This is to print the output of the regression
       
 
 

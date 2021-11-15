@@ -16,4 +16,4 @@ Then we will need to scale the momentum data
 
 Hint: `MinMaxScaler()`
 
-And finally, make sure the data are of the appropriate length.
+And finally, make sure the data are of the appropriate length.  Think about the length of your inputs, and what ravel is doing.

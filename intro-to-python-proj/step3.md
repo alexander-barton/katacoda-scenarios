@@ -1,6 +1,10 @@
 ## Data Download
 
-Now let's write a function to download data.  This one is a bit tricky, so it has been provided for you
+Next we'll examine the `download_data` function.  This is a good time to look at the dogstring.
+
+Docstrings are comments at the beginning of functions that provide a description of what they do, what they need, and what the output.
+
+An example is below:
 
 ```
 def download_data(ticker):
@@ -14,17 +18,5 @@ def download_data(ticker):
     """
 
     try:
-        data = yf.Ticker(ticker)
-    
-    except Exception as e:
-        print("Input must be a string.")
-        return
-
-    # Check if there is an insufficient amount of data
-    # Probably means the ticker is invalid
-    if len(data.info) < 100:
-        print("Invalid ticker name.")
-        return 
-
-    return data.history(period='1mo')['Close'].to_numpy()
+        ...
 ```
